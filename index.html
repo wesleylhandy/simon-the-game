@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Simon The Game - Simulator</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
+	<!--jQuery-->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	
+	<!--Font Awesome-->
+    <script src="https://use.fontawesome.com/5f1f3cb4d3.js"></script>
+
+	<!-- howler.js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.2/howler.core.min.js"></script>
+
+	<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Ultra" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+</head>
+<body>
+
+<main id="game-container">
+
+	<div class = 'game-pad green' id="top-left" data-color='green'></div>
+	<div class = 'game-pad red' id="top-right" data-color='red'></div>
+	<div class = 'game-pad yellow' id="bottom-left" data-color='yellow'></div>
+	<div class = 'game-pad blue' id="bottom-right" data-color='blue'></div>
+
+	<div id="center-console">
+		<center>
+			<div id='game-title'>Simon<sup><span id='registered-icon'><i class="fa fa-registered" aria-hidden="true"></i></span></sup></div>
+
+			<div class = 'row' id = "button-row">
+				<div class = '' id='turn-display'><span id='turn-text'>--</span></div>
+				<div class = 'control-buttons' id='start-game-button'></div>
+				<div id = 'strict-button-group'>
+					<div class = 'control-buttons' id='strict-button'></div>
+					<div class = '' id='strict-toggle-display'></div>
+				</div>
+			</div>
+			<div class = 'row' id= "label-button-row">
+				<div class = 'labels' id='display-label'>COUNT</div>
+				<div class = 'labels' id='start-game-label'>START</div>
+				<div class = 'labels' id='strict-game-label'>STRICT</div>
+			</div>
+			<div class = 'row' id = 'power-button-row'>
+				<div class='power-button-labels labels' id='on-label'>ON</div>
+				<div class = 'control-buttons' id= 'power-toggle-button'>
+					<div class = '' id='power-button'></div> <!-- slider -->
+				</div>
+				<div class='power-button-labels labels' id='off-label'>OFF</div>
+			</div>
+		</center>
+
+	</div>
+	
+</main>
+
+<script type="text/javascript" src="assets/js/logic.js"></script>
+</body>
+</html>
