@@ -1,7 +1,5 @@
 $(document).ready(function(){
-
-	/********** DYNAMIC STYLING **********/
-	$("main").css("width", window.innerHeight).css("height", window.innerHeight);
+	
 	//set year
 	var d = new Date();
 	var year = d.getFullYear();
