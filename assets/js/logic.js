@@ -38,7 +38,7 @@ $(document).ready(function(){
 	var AI = function() {
 		this.movesArray = [];
 		this.moveInterval = 1500;
-		this.turn = 1;
+		this.turn = 0;
 	}
 
 	AI.prototype.addTurn = function() {
@@ -115,7 +115,7 @@ $(document).ready(function(){
 	AI.prototype.reset = function() {
 		this.movesArray = [];
 		this.moveInterval = 1500;
-		this.turn = 1;
+		this.turn = 0;
 	}
 
 	AI.prototype.clear = function() {
