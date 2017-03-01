@@ -11,6 +11,14 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
+#hamburger {
+	position: absolute;
+	top:3%;
+	left: 1%;
+	font-size: 300%;
+	z-index: 3;
+}
+
 #header {
 	display:none;
 	position: absolute;

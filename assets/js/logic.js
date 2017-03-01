@@ -299,6 +299,16 @@ $(document).ready(function(){
 
 	/*********** EVENT HANDLERS **********/
 
+	$("#hamburger").on("mouseenter", function() {
+        $("#hamburger").hide('fast');
+        $("#header").show('fast');
+    });
+
+    $("#header").on("mouseleave", function(){
+        $("#header").hide('fast');
+        $("#hamburger").show('fast');
+    });
+
 	$("#power-toggle-button").click(function(){
 		powerOn = !powerOn;
 		gameReset();
