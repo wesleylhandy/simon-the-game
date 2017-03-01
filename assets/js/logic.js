@@ -41,6 +41,10 @@ $(document).ready(function(){
 		this.turn = 1;
 	}
 
+	AI.prototype.addTurn = function() {
+		this.turn++;
+	}
+
 	AI.prototype.getNewAiMove = function() {
 
 		var num = Math.floor(Math.random()*4 + 1);
@@ -135,6 +139,7 @@ $(document).ready(function(){
 
 				delayMoves = setTimeout(gameOver, 500);
 			} else {
+				ai.addTurn();
 				var turnDisplay = "0" + ai.getTurns();
 				$("#turn-text").text(turnDisplay.slice(-2));
 
