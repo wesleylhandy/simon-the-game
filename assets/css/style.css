@@ -11,6 +11,33 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
+#header {
+	display:none;
+	position: absolute;
+	top:3%;
+	left:1%;
+	border: 10px solid rgba(9, 74, 143, .4);
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.75);
+	height: 6em;
+	width: 150px;
+	z-index: 3;
+}
+
+.title {
+	font-style: bold;
+	font-size: 137.5%;
+	text-decoration: underline;
+}
+
+#info div {
+	padding: 2% 0 2% 0;
+}
+
+#header a {
+	color: black;
+}
+
 main {
 	width: 50%;
 	height: 100%;
