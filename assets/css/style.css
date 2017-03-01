@@ -13,7 +13,7 @@ body {
 
 main {
 	width: 50%;
-	height: 100vh;
+	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 25%;
@@ -76,7 +76,7 @@ main {
 	border-bottom: 2em solid #333;
 	border-left: 2em solid #333;
 	border-right: 1em solid #333;
-	/*box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.5), inset -2px -2px 5px rgba(255, 255, 255, 0.5);*/
+	/*box-shadow: inset 2px -2px 5px rgba(255, 255, 255, 0.25), inset -2px 2px 5px rgba(255, 255, 255, 0.25);*/
 	left: 0;
 	bottom: 0;
 	overflow: hidden;
@@ -99,7 +99,7 @@ main {
 #game-title {
 	text-align: center;
 	z-index: 3;
-	font-size: 300%;
+	font-size: 250%;
 	margin-top: 0.75em;
 	font-family: 'Ultra', serif;
 }
@@ -139,7 +139,7 @@ sup {
 #start-game-button {
 	float: left;
 	box-sizing: border-box;
-	margin-left: 2.25em;
+	margin-left: 1.2em;
 	margin-top: .6em;
 	height: 2.25em;
 	width: 2.25em;
@@ -152,7 +152,7 @@ sup {
 #strict-button-group {
 	float: left;
 	position: relative;
-	margin-left: 2.25em;
+	margin-left: 1.75em;
 	margin-top: 0.6em;
 }
 
@@ -189,19 +189,19 @@ sup {
 
 #start-game-label {
 	float: left;
-	margin-left: 3em;
+	margin-left: 1.6em;
 	text-align: center;
 }
 
 #strict-game-label {
 	float: left;
-	margin-left: 2.75em;
+	margin-left: 2em;
 	text-align: center;
 }
 
 #power-button-row {
-	width: 39%;
-	margin-top: 3.5em;
+	width: 44%;
+	margin-top: 3.25em;
 }
 
 #on-label {

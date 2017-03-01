@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+	/********** DYNAMIC STYLING **********/
+	$("main").css("width", window.innerHeight).css("height", window.innerHeight);
+
 	/********** GAME LOGIC **********/
 
 	//global variables
@@ -258,7 +261,7 @@ $(document).ready(function(){
 		'lose': {
 			sound: new Howl({
 				src: ['assets/sounds/sound8.mp3'],
-				volume: 1,
+				volume: 0.5,
 				rate: 0.5
 			})
 		},
