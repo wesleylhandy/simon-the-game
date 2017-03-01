@@ -109,6 +109,9 @@ $(document).ready(function(){
 		this.turn = 1;
 	}
 
+	AI.prototype.clear = function() {
+		clearInterval(this.delay);
+	}
 
 	//MAIN GAME FUNCTIONALITY
 
@@ -279,9 +282,13 @@ $(document).ready(function(){
 	}
 
 	function gameReset() {
+		//clear any intervals or timeouts
+		ai.clear();
 		clearTimeout(delayMoves);
 		clearTimeout(delayTimer);
+		//reset ai to initial conditions
 		ai.reset();
+		//reset turn screen
 		$("#turn-text").text('--');
 	}
 
