@@ -46,9 +46,9 @@ $(document).ready(function(){
 		var num = Math.floor(Math.random()*4 + 1);
 
 		this.movesArray.push(num);
-		
-		this.turn++;
 
+		this.turn = this.movesArray.length;
+		
 		if(this.turn >=5 ) {
 			this.moveInterval = 1000;
 		} else if (this.turn >= 9) {
